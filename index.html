@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Only Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Create a greeting message
+        const greeting = document.createElement('h1');
+        greeting.textContent = 'Welcome to My JavaScript Page!';
+
+        // Create an image element
+        const image = document.createElement('img');
+        image.src = 'https://via.placeholder.com/200';
+        image.alt = 'Placeholder Image';
+
+        // Append the elements to the body
+        document.body.appendChild(greeting);
+        document.body.appendChild(image);
+    </script>
+</body>
+</html>
