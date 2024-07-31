@@ -7,15 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
         }
         h1 {
-            color: #333;
+            color: #111;
         }
         img {
             width: 200px;
@@ -26,26 +20,22 @@
 </head>
 <body>
    <script>
-        // Create a greeting message
         const greeting = document.createElement('h1');
         greeting.textContent = 'Welcome to My JavaScript Page!';
         document.body.appendChild(greeting);
 
-        // Create an image element
         const image = document.createElement('img');
         image.src = 'https://via.placeholder.com/200';
         image.alt = 'Placeholder Image';
         document.body.appendChild(image);
 
-        // Function to create a paragraph with placeholder text
         function createParagraph(index) {
             const paragraph = document.createElement('p');
             paragraph.textContent = `This is paragraph ${index}. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
             return paragraph;
         }
 
-        // Append multiple paragraphs to the body
-        for (let i = 1; i <= 100; i++) {
+        for (let i = 1; i <= 50; i++) {
             const paragraph = createParagraph(i);
             document.body.appendChild(paragraph);
         }
